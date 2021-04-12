@@ -10,6 +10,7 @@ import fi.ptuomaal.ping.entity.Pong;
 import fi.ptuomaal.ping.service.PongService;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
+// Tämä luokka toimii controllerina test-päätteisille API:n-endpointeille.
 
 @Path("test")
 public class TestResource {

@@ -2,6 +2,8 @@ package fi.ptuomaal.ping.entity;
 
 import javax.persistence.*;
 
+// Tämä luokka mallintaa Pong-entiteetin.
+
 @Entity
 @NamedQueries({
         @NamedQuery

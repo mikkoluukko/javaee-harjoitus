@@ -7,6 +7,9 @@ import javax.persistence.PersistenceContext;
 import java.util.ArrayList;
 import java.util.List;
 
+// Tämä luokka toimii Pong-entiteettien repositoriona eli toimii tietokannan
+// ja API:n välissä.
+
 public class PongRepository {
 
     @PersistenceContext(unitName="ping")

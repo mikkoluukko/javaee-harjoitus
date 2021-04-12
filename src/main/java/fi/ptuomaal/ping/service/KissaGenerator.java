@@ -5,14 +5,14 @@ import javax.ejb.Singleton;
 import javax.ejb.Startup;
 import javax.inject.Inject;
 
-// Tätä luokkaa käytetään PongServicen generateContent-metodin kutsumiseen
+// Tätä luokkaa käytetään KissaServicen generateContent-metodin kutsumiseen
 
 @Startup
 @Singleton
-public class PongGenerator {
+public class KissaGenerator {
 
     @Inject
-    PongService service;
+    KissaService service;
 
     @PostConstruct
     public void init() {
