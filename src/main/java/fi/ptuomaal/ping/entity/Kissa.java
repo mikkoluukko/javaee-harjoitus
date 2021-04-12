@@ -4,6 +4,23 @@ import javax.persistence.*;
 
 // Tämä luokka mallintaa Kissa-entiteetin.
 
+/*
+Laitan tähän myös muihin tehtäviin liittyviä kommentteja:
+
+Tehtävä 9: Haastavimmaksi koin kenties epävarmuuden oikeiden käytäntöjen suhteen JakartaEE-maailmassa.
+Esimerkiksi en usko että ratkaisuni Pongien POST-endpointiksi on kovinkaan fiksu, mutta en myöskään ehtinyt
+selvittämään mikä olisi oikea tapaa välittää Request bodyssä JSON-objekteja. Minulle jäi myös epäselväksi miksi
+KissaService:ssä generateContent-metodilla luomieni testiobjektien id:t eivät ole tietokannassa 1...3 vaan
+satunnaiset arvot väliltä 1...6. Käytin tehtävään aikaa melkein neljä tuntia ja ilman aikarajaohjetta
+olisin jatkanut aiheen opiskelua vielä lisää.
+
+Tehtävä 10: En nyt ole varma, mutta ehkä kaikkien endpointtien vastauksiin olisi hyvä lisätä HTTP Status-koodit.
+Repository-tiedostoissa on kaiketi turhaan kaksi erilaista toteutusta nimen perusteella hakemiseen. Oletan että
+NamedQuery:ä käyttävä toteutus on tehokkaampi, joten sen toisen voisi varmaankin poistaa. Luulen myös että POST ja
+PUT/PATCH endpointtien olisi syytä vastaanottaa ihan oikeita JSON-objekteja, mutta en ehtinyt selvittää miten tämä
+kannattaisi toteuttaa.
+*/
+
 @Entity
 @NamedQueries({
         @NamedQuery
